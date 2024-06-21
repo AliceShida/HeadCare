@@ -1,34 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body{
-    background-color: #f1f1f1;
+    background-color: #FDFFE2;
+    font-family: "Nunito Sans", sans-serif;
 }
 #nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding-left: 15px;
     margin-bottom: 20px;
+    
 }
 .navegador{
-    background-color: rgb(168, 168, 6);
-    padding-top: 10px;
-    padding-left: 200px;
-    padding-right: 200px;
-    border-color: black;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: rgb(182, 182, 159);
+    padding: 15px 215px 15px 215px;
+    background-color: #5A72A0;
+}
+#agendamento{
+    background-color: #FDFFE2;
 }
 .conteudo{
-    left: 50%;
-    margin: 0 0 0 -250px;
-    position: absolute;
-    width: 500px;
-}
-.calendario{
-    text-align: center;
+    width: 80%; /* Ajuste para 80% da largura da tela */
+    max-width: 1200px; /* Limite máximo para a largura */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+   
+
 }
 .conteudo .calendario div{
     position: relative;
+    width: 100%; /* Ajuste para 100% da largura da div pai */
+    margin: 0 auto;
+
+}
+.calendario{
+    text-align: center;
+    width: 100%; /* Ajuste para 100% da largura da div pai */
+    margin: 0 auto; /* Centraliza o calendário */
+    border: 2px solid #cbd1d2; /* Adiciona a borda ao redor do calendário */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    padding: 20px; /* Adiciona espaço dentro da borda */
+    background: white;
+
+}
+.calendario table{
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+.calendario thead{
+    background: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.calendario thead td{
+    height: 69.4px;
+}
+.calendario td{
+    border: 1px solid #cbd1d2;
+    height: 100px; /* Ajuste para 100px */
+    text-align: center;
+    width: 100px;
+}
+.calendario tbody td{
+    cursor: pointer;
+}
+.calendario tbody td:hover{
+    background: rgb(0, 173, 223, 0.8);
+    color: #f9f9f9;
+}
+.calendario table .dia-atual{
+    background: #00addf;
+    color: #f9f9f9;
+}
+.calendario .mes-anterior, .calendario .proximo-mes{
+    color: #cbd1d2;
+}
+.calendario .mes-anterior:hover, .calendario .proximo-mes:hover{
+    background: #98a0a0;
 }
 h2{
     margin-top: 20px;
@@ -58,41 +112,7 @@ h2{
     background: #cbd1d2;
     color: #f9f9f9;
 }
-.calendario table{
-    margin-top: 20px;
-    border-collapse: collapse;
-}
-.calendario thead{
-    background: white;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-.calendario thead td{
-    height: 69.4px;
-}
-.calendario td{
-    border: 1px solid #cbd1d2;
-    height: 71.4px;
-    text-align: center;
-    width: 71.4px;
-}
-.calendario tbody td{
-    cursor: pointer;
-}
-.calendario tbody td:hover{
-    background: rgb(0, 173, 223, 0.8);
-    color: #f9f9f9;
-}
-.calendario table .dia-atual{
-    background: #00addf;
-    color: #f9f9f9;
-}
-.calendario .mes-anterior, .calendario .proximo-mes{
-    color: #cbd1d2;
-}
-.calendario .mes-anterior:hover, .calendario .proximo-mes:hover{
-    background: #98a0a0;
-}
+
 .event{
     position: relative;
 }
