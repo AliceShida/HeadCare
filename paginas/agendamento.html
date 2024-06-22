@@ -8,18 +8,20 @@
 </head>
 <body>
     <header>
-        <nav id="nav">
-            <div class="navegador">inicio</div>
-            <div class="navegador">metas</div>
-            <div class="navegador" id="agendamento">agendamento</div>
-            <div class="navegador">perfil</div>
+        <nav class="navbar">
+            <a href="#inicio">Início</a>
+            <a href="#metas">Metas</a>
+            <a href="#agendamento" style="background-color: #a4c8ff ;">Consultas agendadas</a>
+            <a href="#batepapo">Bate papo</a>
+            <a href="#perfil">Perfil</a>
         </nav>
     </header>
     <div class="conteudo">
         <div class="calendario">
             <div>
                 <h2 id="mes">Abril</h2>
-                <a href="#" class="btn-pro" id="btn_next">▶</a>
+                <a href="#" class="btn-ant" id="btn_prev"><</a>
+                <a href="#" class="btn-pro" id="btn_next">></a>
             </div>
             <table>
                 <thead>
@@ -34,63 +36,11 @@
                     </tr>
                 </thead>
                 <tbody id="dias">
-                    <tr>
-                        <td class="mes-anterior">1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td class="dia-atual">2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td class="event">2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td class="proximo-mes">7</td>
-                    </tr>
+                    <!-- Dias do mês serão gerados dinamicamente -->
                 </tbody>
             </table>
         </div>
     </div>
+    <script src="javaScript/main.js"></script>
 </body>
 </html>
