@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #f3f3f3;
+  background-color: #a4c8ff;
 }
 
 /* ESTILOS GERAIS */
@@ -15,7 +15,13 @@ body {
 }
 
 .bg-color-2 {
-  background-color: #ffffff;
+  background-color: #a4c8ff;
+}
+.bg-color-3 {
+  background-color: #a4c8ff;
+}
+.bg-color-4 {
+  background-color: white;
 }
 
 .font-color {

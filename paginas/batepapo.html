@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BatePapo - HeadCare</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="/paginas/css/batepapo.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="/paginas/landingPage.html">Início</a>
+        <a href="#metas">Metas</a>
+        <a href="/paginas/agendamento.html">Consultas agendadas</a>
+        <a href="#batepapo" style="background-color: #a4c8ff">Bate papo</a>
+        <a href="/paginas/perfil.html">Perfil</a>
+        <a href="/paginas/Login.html">Entrar</a>
+      </nav>
+    </header>
+
+    <div class="chat-container">
+      <div class="contacts-list">
+        <div class="contact-item">
+          <img
+            src="img/psico1.jpg"
+            alt="Izabela Profile Picture"
+            class="profile-pic"
+          />
+          <p class="contact-name" style="color: white">Dr.Izabela</p>
+        </div>
+        <div class="contact-item">
+          <img
+            src="img/psico2.jpg"
+            alt="Julia Profile Picture"
+            class="profile-pic"
+          />
+          <p class="contact-name" style="color: white">Dr.Julia</p>
+        </div>
+        <div class="contact-item">
+          <img
+            src="img/psicohm2.webp"
+            alt="Rodrigo Profile Picture"
+            class="profile-pic"
+          />
+          <p class="contact-name" style="color: white">Dr.Rodrigo</p>
+        </div>
+        <div class="contact-item">
+          <img
+            src="img/psicohm3.jpeg"
+            alt="João Profile Picture"
+            class="profile-pic"
+          />
+          <p class="contact-name" style="color: white">Dr.João</p>
+        </div>
+        <div class="contact-item">
+          <img
+            src="img/psicohm4.jpg"
+            alt="Igor Profile Picture"
+            class="profile-pic"
+          />
+          <p class="contact-name" style="color: white">Dr.Igor</p>
+        </div>
+        <div class="contact-item active">
+          <img
+            src="img/psico3.jpg"
+            alt="Ana Alice Profile Picture"
+            class="profile-pic"
+          />
+          <p class="contact-name" style="color: white">Dr.Ana Alice</p>
+        </div>
+        <div class="contact-item">
+          <img
+            src="img/psicoultimo.jpg"
+            alt="Pedro Profile Picture"
+            class="profile-pic"
+          />
+          <p class="contact-name" style="color: white">Dr.Pedro</p>
+        </div>
+      </div>
+      <div class="chat-window">
+        <div class="chat-header">
+          <img
+            src="img/psico3.jpg"
+            alt="Ana Alice Profile Picture"
+            class="profile-pic"
+          />
+          <p class="contact-name">Dr.Ana Alice</p>
+        </div>
+        <div class="chat-messages">
+          <div class="message-item outgoing">
+            <p class="message-text" style="color: white">Oi! Como você está?</p>
+            <p class="message-timestamp" style="color: white">2 dias atrás</p>
+          </div>
+          <div class="message-item incoming">
+            <p class="message-text" style="color: black">Bem, e você?</p>
+            <p class="message-timestamp" style="color: black">2 dias atrás</p>
+          </div>
+          <div class="message-item outgoing">
+            <p class="message-text" style="color: white">Estou bem</p>
+            <p class="message-timestamp" style="color: white">Hoje 10:40</p>
+          </div>
+          <div class="message-item outgoing">
+            <p class="message-text" style="color: white">
+              Como vai o seu tratamento?
+            </p>
+            <p class="message-timestamp" style="color: white">Hoje 10:40</p>
+          </div>
+          <div class="message-item outgoing">
+            <p class="message-text" style="color: white">
+              Melhorou? espero que sim..
+            </p>
+            <p class="message-timestamp" style="color: white">Hoje 10:41</p>
+          </div>
+          <div class="message-item incoming">
+            <p class="message-text" style="color: black">
+              Me sinto bem melhor!
+            </p>
+            <p class="message-timestamp" style="color: black">Hoje 10:42</p>
+          </div>
+        </div>
+        <div class="chat-input">
+          <input
+            type="text"
+            class="message-input"
+            placeholder="Digite uma mensagem"
+          />
+          <button class="send-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="send-icon"
+            >
+              <path
+                d="M2.25 12l8.95-8.95c.32-.32.89-.32 1.21 0l8.95 8.95c.32.32.32.89 0 1.21L12.46 22.25c-.32.32-.89.32-1.21 0l-8.95-8.95c-.32-.32-.32-.89 0-1.21z"
+              />
+            </svg>
+          </button>
+          <button class="voice-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="voice-icon"
+            >
+              <path
+                d="M12 14c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3zm5-7c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-9 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

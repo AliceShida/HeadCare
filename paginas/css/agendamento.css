@@ -1,140 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: #a4c8ff;
-    font-family: "Nunito Sans", sans-serif;
+body {
+  background-color: #a4c8ff;
+  font-family: "Nunito Sans", sans-serif;
 }
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1A2130;
-    overflow: hidden;
-    margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a2130;
+  overflow: hidden;
+  margin-bottom: 60px;
 }
 .navbar a {
-    flex: 1;
-    padding: 14px 20px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    border-right: 1px solid #555;
-    border-bottom: 1px solid #555;
-    font-weight: 700;
-
+  flex: 1;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-right: 1px solid #555;
+  border-bottom: 1px solid #555;
+  font-weight: 700;
 }
 .navbar a:last-child {
-    border-right: none;
+  border-right: none;
 }
 .navbar a:hover {
-    background-color: #575757;
+  background-color: #575757;
 }
-.conteudo{
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
+.conteudo {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.conteudo .calendario div{
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
+.conteudo .calendario div {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
 }
-.calendario{
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    border: 2px solid #cbd1d2;
-    border-radius: 10px;
-    padding: 20px;
-    background: white;
+.calendario {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #cbd1d2;
+  border-radius: 10px;
+  padding: 20px;
+  background: white;
 }
-.calendario table{
-    margin-top: 20px;
-    border-collapse: separate;
-    border-spacing: 5px; 
-    width: 100%;
+.calendario table {
+  margin-top: 20px;
+  border-collapse: separate;
+  border-spacing: 5px;
+  width: 100%;
 }
-.calendario thead{
-    background: white;
-    font-weight: 600;
-    text-transform: uppercase;
+.calendario thead {
+  background: white;
+  font-weight: 600;
+  text-transform: uppercase;
 }
-.calendario thead td{
-    height: 50px; 
+.calendario thead td {
+  height: 50px;
 }
-.calendario td{
-    border: 1px solid #cbd1d2;
-    height: 80px; 
-    text-align: center;
-    width: 80px; 
-    background: #f9f9f9; 
-    border-radius: 5px; 
+.calendario td {
+  border: 1px solid #cbd1d2;
+  height: 80px;
+  text-align: center;
+  width: 80px;
+  background: #f9f9f9;
+  border-radius: 5px;
 }
-.calendario tbody td{
-    cursor: pointer;
+.calendario tbody td {
+  cursor: pointer;
 }
-.calendario tbody td:hover{
-    background: rgb(0, 173, 223, 0.8);
-    color: #f9f9f9;
+.calendario tbody td:hover {
+  background: rgb(0, 173, 223, 0.8);
+  color: #f9f9f9;
 }
-.calendario table .dia-atual{
-    background: #00addf;
-    color: #f9f9f9;
+.calendario table .dia-atual {
+  background: #00addf;
+  color: #f9f9f9;
 }
-.calendario .mes-anterior, .calendario .proximo-mes{
-    color: #cbd1d2;
+.calendario .mes-anterior,
+.calendario .proximo-mes {
+  color: #cbd1d2;
 }
-.calendario .mes-anterior:hover, .calendario .proximo-mes:hover{
-    background: #98a0a0;
+.calendario .mes-anterior:hover,
+.calendario .proximo-mes:hover {
+  background: #98a0a0;
 }
-h2{
-    margin-top: 20px;
-    font-size: 32px;
-    text-transform: uppercase;
+h2 {
+  margin-top: 20px;
+  font-size: 32px;
+  text-transform: uppercase;
 }
-.btn-ant,.btn-pro{
-    position: absolute;
-    top: 50%;
-    height: 32px;
-    width: 32px;
-    line-height: 32px;
-    margin-top: -16px;
-    border: 2px solid #cbd1d2;
-    border-radius: 50%;
-    color: #cbd1d2;
-    font-size: 16px;
-    font-weight: bold;
+.btn-ant,
+.btn-pro {
+  position: absolute;
+  top: 50%;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  margin-top: -16px;
+  border: 2px solid #cbd1d2;
+  border-radius: 50%;
+  color: #cbd1d2;
+  font-size: 16px;
+  font-weight: bold;
 }
-.btn-ant{
-    left: 80px;
+.btn-ant {
+  left: 80px;
 }
-.btn-pro{
-    right: 80px;
+.btn-pro {
+  right: 80px;
 }
-.btn-ant:hover, .btn-pro:hover{
-    background: #cbd1d2;
-    color: #f9f9f9;
+.btn-ant:hover,
+.btn-pro:hover {
+  background: #cbd1d2;
+  color: #f9f9f9;
 }
-.event{
-    position: relative;
+.event {
+  position: relative;
 }
-.event:after{
-    content: '';
-    width: 7px;
-    height: 7px;
-    left: 50%;
-    bottom: 7px;
-    margin: -3.5px 0 0 -3.5;
-    background: #00addf;
-    display: block;
-    position: absolute;
-    border-radius: 50%;
+.event:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  left: 50%;
+  bottom: 7px;
+  margin: -3.5px 0 0 -3.5;
+  background: #00addf;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
 }
-.event:hover:after{
-    background: #f9f9f9;
+.event:hover:after {
+  background: #f9f9f9;
 }

@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f4faff;
+  font-family: "Nunito Sans", sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a2130;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.navbar a {
+  flex: 1;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-right: 1px solid #555;
+  border-bottom: 1px solid #555;
+  font-weight: 700;
+}
+.navbar a:last-child {
+  border-right: none;
+}
+.navbar a:hover {
+  background-color: #575757;
+}
+/* General Styles */
+
+.container {
+  display: flex;
+}
+.navbar-logo {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.navbar-nav a {
+  position: relative;
+  font-size: 18px;
+  margin-left: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar-nav a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: 0.3s;
+}
+
+.navbar-nav a:hover::before {
+  color: #ffffff;
+  width: 100%;
+}
+
+.navbar-nav a:hover {
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+/* Header Styles */
+.header {
+  background-color: #fff;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header-left,
+.header-center,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.back-button,
+.notification-button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.search-bar {
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  width: 300px;
+  margin-right: 15px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+/* Chat Container Styles */
+.chat-container {
+  display: flex;
+  margin-top: 60px; /* Adjust for header height */
+  height: calc(100vh - 60px); /* Adjust for header height */
+}
+
+/* Contacts List Styles */
+.contacts-list {
+  background-color: #a4c8ff;
+  width: 300px;
+  padding: 15px;
+  border-right: 1px solid #ddd;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-item.active {
+  background-color: #1a2130;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.contact-name {
+  font-weight: bold;
+}
+
+/* Chat Window Styles */
+.chat-window {
+  flex-grow: 1;
+  padding: 15px;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.chat-messages {
+  height: calc(100% - 100px); /* Adjust for header and input height */
+  overflow-y: auto;
+}
+
+.message-item {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.message-item.outgoing {
+  background-color: #1a2130;
+  text-align: right;
+}
+
+.message-item.incoming {
+  background-color: #a4c8ff;
+  text-align: left;
+}
+
+.message-text {
+  font-size: 16px;
+}
+
+.message-timestamp {
+  font-size: 12px;
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+/* Chat Input Styles */
+.chat-input {
+  background-color: #fff;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.message-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.send-button,
+.voice-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.send-icon,
+.voice-icon {
+  width: 24px;
+  height: 24px;
+  fill: #333;
+}

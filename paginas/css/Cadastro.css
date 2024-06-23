@@ -68,41 +68,29 @@ p {
 }
 
 /* NAVBAR */
-.navbar-logo {
-  font-size: 30px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a2130;
+  overflow: hidden;
+  margin-bottom: 60px;
 }
-
-.navbar-nav a {
-  position: relative;
-  font-size: 18px;
-  margin-left: 20px;
-  font-weight: 500;
+.navbar a {
+  flex: 1;
+  padding: 14px 20px;
+  text-align: center;
   text-decoration: none;
-  transition: 0.3s;
+  color: white;
+  border-right: 1px solid #555;
+  border-bottom: 1px solid #555;
+  font-weight: 700;
 }
-
-.navbar-nav a::before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #ffffff;
-  transition: 0.3s;
+.navbar a:last-child {
+  border-right: none;
 }
-
-.navbar-nav a:hover::before {
-  color: #ffffff;
-  width: 100%;
-}
-
-.navbar-nav a:hover {
-  color: #ffffff;
-  transition: 0.3s;
+.navbar a:hover {
+  background-color: #575757;
 }
 
 /* RODAPÉ */
@@ -120,7 +108,9 @@ footer {
 /* ENTRAR */
 /* ESQUERDA */
 .entrar-img {
-  background-image: url(/paginas/img/WhatsApp\ Image\ 2024-06-19\ at\ 09.03.17\ \(1\).jpeg);
+  background-image: url(/paginas/img/WhatsApp\Image\2024-06-19\at\09.03.17\\(
+      1\
+    ).jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 30px 0 0 30px;
