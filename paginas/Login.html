@@ -1,168 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="stylesheet" href="/paginas/css/login.css" />
-    <title>Login - HeadCare</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-sm bg-color-2">
-      <div class="container">
-        <a class="navbar-brand navbar-logo font-color" href="../index.jsp"
-          >HEADCARE</a
-        >
-        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link font-color" href="/paginas/landingPage.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-color" href="#">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-color" href="#">Entrar</a>
-            </li>
-          </ul>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c992652fcd.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/login.css">
+    
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Cadastre-se</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="img/ilustracaoPlana.jpg" alt="simulacaoDeTerapia">
         </div>
-      </div>
-    </nav>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div id="logoTitulo">
+                        <img src="img/logo.png" alt="Logo-HeadCare" id="logo">
+                        <h1 id="headCare">HeadCare</h1>
+                    </div>
 
-    <section class="entrar mg">
-      <div class="container">
-        <div class="row">
-          <!-- ESQUERDA -->
-          <div
-            class="col entrar-img container d-flex justify-content-center font-color flex-column"
-          >
-            <p class="logo mb-5">HeadCare</p>
-            <div class="esq-entrar-texto">
-              <h2>PRONTOS A QUALQUER MOMENTO PARA TE AJUDAR!</h2>
-            </div>
-            <p>
-              Bem-vindo à HeadCare! Por favor, faça seu login para acessar sua
-              conta.
-            </p>
-          </div>
-          <!-- DIREITA -->
-          <div class="col entrar-form d-flex justify-content-center bg-color-2">
-            <form
-              action=""
-              method="post"
-              class="form-container d-flex justify-content-center flex-column"
-            >
-              <div class="text-center font-color">
-                <h2>LOGIN</h2>
-              </div>
+                    <div class="title">
+                        <h1 id="cadastro">Faça Login</h1>
+                    </div>
+                </div>
 
-              <div>
-                <input
-                  type="text"
-                  name="email"
-                  id="email"
-                  class="input-box"
-                  placeholder="Email"
-                  required
-                />
-              </div>
-              <div>
-                <input
-                  type="password"
-                  name="senha"
-                  id="senha"
-                  class="input-box"
-                  placeholder="Senha"
-                  required
-                />
-              </div>
-              <div>
-                <input type="checkbox" id="input-checkbox" />
-                <label for="input-checkbox" class="font-color"
-                  >Lembrar usuário</label
-                >
-              </div>
-              <div class="d-flex justify-content-center mt-2">
-                <input type="submit" value="Entrar" class="btn-sec" />
-              </div>
-              <div class="text-center font-color">
-                <p>
-                  Não tem conta?<br />
-                  <a href="Cadastro.html" class="link font-color"
-                    ><b>CADASTRE-SE</b></a
-                  >
-                </p>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+                    <div class="input-box">
+                        <label for="email"></label>
+                        <input id="email" type="email" name="email" placeholder="Email" required>
+                    </div>
 
-    <footer class="bg-color-2 font-color">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h6>Contato</h6>
-            <p>Endereço: Rua XY, 123</p>
-            <p>E-mail: contato@Headcare.com</p>
-            <p>Telefone: (61) 9 7456-7890</p>
-          </div>
-          <div class="col-md-4">
-            <h6>Redes Sociais</h6>
-            <a
-              href="https://www.instagram.com/Itour_Viagens"
-              target="_blank"
-              class="social-link"
-              ><i class="fab fa-instagram link font-color"></i
-            ></a>
-            <a href="#" target="_blank" class="social-link link font-color"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a href="#" target="_blank" class="social-link"
-              ><i class="fab fa-twitter link font-color"></i
-            ></a>
-          </div>
-          <div class="col-md-4">
-            <h6>Redes Sociais</h6>
-            <a
-              href="https://www.instagram.com/Itour_Viagens"
-              target="_blank"
-              class="social-link"
-              ><i class="fab fa-instagram link font-color"></i
-            ></a>
-            <a href="#" target="_blank" class="social-link link font-color"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a href="#" target="_blank" class="social-link"
-              ><i class="fab fa-twitter link font-color"></i
-            ></a>
-          </div>       
-        </div>
+                    <div class="input-box">
+                        <label for="confirmPassword"></label>
+                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Senha" required>
+                    </div>
+                    
+                    <div class="login-button">
+                        <button><a href="#">Entrar</a></button>
+                    </div>
 
-        <p class="text-center">&copy; 2024 HeadCare</p>
-      </div>
-    </footer>
+                </div>
+                
+    </div>
+</body>
 
-    <script
-      src="https://kit.fontawesome.com/bf8d9f5eb9.js"
-      crossorigin="anonymous"
-    ></script>
-    >
-  </body>
 </html>
