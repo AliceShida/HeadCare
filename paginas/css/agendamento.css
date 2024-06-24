@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #a4c8ff;
+  background-image: url("/paginas/img/8066927.jpg");
   font-family: "Nunito Sans", sans-serif;
 }
 .navbar {
@@ -141,5 +141,3 @@ h2 {
 .event:hover:after {
   background: #f9f9f9;
 }
-
-

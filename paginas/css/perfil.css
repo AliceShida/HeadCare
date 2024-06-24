@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #fdffe2;;
+  background-image: url("/paginas/img/5767931.jpg");
   font-family: "Nunito Sans", sans-serif;
 }
 .navbar {
@@ -220,6 +220,6 @@ footer {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .
+  -webkit-transition: 0.4s;
+  transition: .;
 }
